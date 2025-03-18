@@ -12,7 +12,12 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
+// Import route
 app.use('/api/auth', authRoutes);
+
+const newsRoutes = require("./routes/news");
+app.use("/api", newsRoutes);
+
 
 app.listen(PORT, () => {
     console.log(`🚀 Server chạy tại http://localhost:${PORT}`);
