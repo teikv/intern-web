@@ -12,7 +12,7 @@ connectDB();
 const user = {
     name: "Hekate",
     email: "test@example.com",
-    password: "123456",
+    password: "$2a$12$38o/0n3CSTT5087q31FjjeDFjo/mblQ8m7ZLf80GeA88KJrcl3nEi",
 };
 
 const newsData = JSON.parse(fs.readFileSync("./data/news.json", "utf-8"));
